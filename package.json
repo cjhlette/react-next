@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "next build",
-    "dev": "node server.js",
     "dev-original": "next",
     "start-original": "next start",
+    "build": "next build",
+    "dev": "node server.js",
     "start": "NODE_ENV=production node server.js",
+    "preview": "next build && next export -o dist && http-server dist",
     "lint": "tslint -c ./tslint.json --exclude **/*.d.ts --exclude ./node_modules --project . --fix **/*.tsx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +18,7 @@
   "license": "ISC",
   "dependencies": {
     "compression": "^1.7.3",
+    "http-server": "^0.11.1",
     "koa": "^2.7.0",
     "koa-compress": "^3.0.0",
     "koa-connect": "^2.0.1",
