@@ -6,3 +6,6 @@
 
 # build
 /dist
+
+# yarn
+yarn.lock

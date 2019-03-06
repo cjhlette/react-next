@@ -11,7 +11,7 @@ export const Layout = props => (
     <Head>
       <title>{props.title}</title>
       <meta charSet="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      {/*<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />*/}
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
 
