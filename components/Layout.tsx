@@ -13,6 +13,7 @@ export const Layout = props => (
       <meta charSet="utf-8" />
       {/*<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />*/}
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
     </Head>
 
     <Header/>

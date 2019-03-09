@@ -19,5 +19,5 @@ var isIE = UA && /msie|trident/.test(UA);
 var isIE9 = UA && UA.indexOf('msie 9.0') > 0;
 var isIE10 = UA && UA.indexOf('msie 10.0') > 0;
 if(isIE9 || isIE10){
-  window.location.href = '/static/browserNotSupport.html';
+  // window.location.href = '/static/browserNotSupport.html';
 }
