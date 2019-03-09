@@ -5,16 +5,19 @@ module.exports = withTypescript(
   withSass({
     webpack: (config, options) => {
       // Unshift polyfills in main entrypoint.
-      /*
+
+
       const originalEntry = config.entry;
       config.entry = async () => {
         const entries = await originalEntry();
-        if (entries['main.js']) {
-          entries['main.js'].unshift('./static/js/polyfills.js'); // <- polyfill here
+        if (
+          entries['main.js'] &&
+          !entries['main.js'].includes('./static/js/polyfills.js')
+        ) {
+          entries['main.js'].unshift('./static/js/polyfills.js')
         }
         return entries;
       };
-      */
 
       return config;
     },
