@@ -1,11 +1,3 @@
 {
-  "presets": [
-    [
-      "next/babel",
-      {
-        "preset-env": {
-        }
-      }
-    ]
-  ]
+  "presets": ["next/babel"]
 }

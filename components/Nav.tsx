@@ -9,8 +9,24 @@ const Nav = () => {
           <a>Home</a>
         </Link>
         &nbsp;
-        <Link href="/cowsay/">
-          <a>cowsay</a>
+        <Link href="/contract">
+          <a>계약</a>
+        </Link>
+        &nbsp;
+        <Link href="/mall">
+          <a>상품</a>
+        </Link>
+        &nbsp;
+        <Link href="/calculation">
+          <a>산출가입</a>
+        </Link>
+        &nbsp;
+        <Link href="/helpdesk">
+          <a>고객센터</a>
+        </Link>
+        &nbsp;
+        <Link href="/disclosure">
+          <a>공시실</a>
         </Link>
       </nav>
     </div>

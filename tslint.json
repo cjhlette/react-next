@@ -1,7 +1,14 @@
 {
-  "rulesDirectory": ["tslint-plugin-prettier"],
-  "extends": ["tslint-config-standard", "tslint-config-prettier"],
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint-config-airbnb",
+    "tstlint-config-prettier"
+  ],
+  "jsRules": {},
   "rules": {
-    "prettier": true
-  }
+    "import-name": false,
+    "variable-name": false,
+    "object-shorthand-properties-first": false
+  },
+  "rulesDirectory": []
 }
