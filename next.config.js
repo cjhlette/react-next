@@ -1,5 +1,6 @@
-const withTypescript = require("@zeit/next-typescript");
-const withSass = require("@zeit/next-sass");
+const withTypescript = require('@zeit/next-typescript');
+const withSass = require('@zeit/next-sass');
+const path = require('path');
 
 module.exports = withTypescript(
   withSass({
@@ -12,10 +13,16 @@ module.exports = withTypescript(
           entries['main.js'] &&
           !entries['main.js'].includes('./static/js/polyfills.js')
         ) {
-          entries['main.js'].unshift('./static/js/polyfills.js')
+          entries['main.js'].unshift('./static/js/polyfills.js');
         }
         return entries;
       };
+
+      // import root path
+      config.resolve.alias['@'] = path.join(__dirname, 'src');
+      config.resolve.alias['@styles'] = path.join(__dirname, 'src/styles')
+      config.resolve.alias['@pages'] = path.join(__dirname, 'src/pages')
+      config.resolve.alias['@components'] = path.join(__dirname, 'src/components')
 
       return config;
     },
@@ -24,5 +31,5 @@ module.exports = withTypescript(
     // typescriptLoaderOptions: {
     //   transpileOnly: false,
     // },
-  })
+  }),
 );
