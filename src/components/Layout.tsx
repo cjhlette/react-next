@@ -16,10 +16,10 @@ export const Layout = (props: Props) => (
       <title>{props.title}</title>
     </Head>
 
-    <Header />
+    <Header/>
 
     <article className={styles.container}>{props.children}</article>
 
-    <Footer />
+    <Footer/>
   </>
 );

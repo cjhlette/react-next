@@ -1,5 +1,5 @@
-import * as React from 'react'
-import * as styles from "../styles/main.scss";
+import * as React from 'react';
+import * as styles from '../styles/main.scss';
 import Link from 'next/link';
 
 const Nav = () => {
@@ -10,11 +10,11 @@ const Nav = () => {
           <a>Home</a>
         </Link>
         &nbsp;
-        <Link href="/contract">
+        <Link prefetch href="/contract">
           <a>계약</a>
         </Link>
         &nbsp;
-        <Link href="/mall">
+        <Link prefetch href="/mall">
           <a>상품</a>
         </Link>
         &nbsp;

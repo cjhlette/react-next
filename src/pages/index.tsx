@@ -1,7 +1,6 @@
 import React from 'react';
 import * as styles from '../styles/main.scss';
 import { Layout } from '../components/Layout';
-// import { SITE_TITLE } from '../constants/env'
 
 export default () => (
   <Layout title="HOME">
