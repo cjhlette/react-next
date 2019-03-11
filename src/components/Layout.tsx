@@ -4,22 +4,41 @@ import Head from 'next/head';
 
 import Header from '@components/Header';
 import Footer from '@components/Footer';
+import { initGA, logPageView } from '@lib/analytics/analytics';
 
 type Props = {
   title: string;
   children: any;
 };
 
-export const Layout = (props: Props) => (
-  <>
-    <Head>
-      <title>{props.title}</title>
-    </Head>
+declare global {
+  interface Window {
+    GA_INITIALIZED: any;
+  }
+}
 
-    <Header/>
+export class Layout extends React.Component<Props> {
+  componentDidMount() {
+    if (!window.GA_INITIALIZED) {
+      initGA();
+      window.GA_INITIALIZED = true;
+    }
+    logPageView();
+  }
 
-    <article className={styles.container}>{props.children}</article>
+  render() {
+    return (
+      <>
+        <Head>
+          <title>{this.props.title}</title>
+        </Head>
 
-    <Footer/>
-  </>
-);
+        <Header />
+
+        <article className={styles.container}>{this.props.children}</article>
+
+        <Footer />
+      </>
+    );
+  }
+}

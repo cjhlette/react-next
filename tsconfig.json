@@ -10,7 +10,8 @@
       "@components/*": ["./src/components/*"],
       "@pages/*": ["./src/pages/*"],
       "@static/*": ["./src/static/*"],
-      "@styles/*": ["./styles/*"]
+      "@styles/*": ["./src/styles/*"],
+      "@lib/*": ["./src/lib/*"]
     },
     "allowJs": true,
     "allowSyntheticDefaultImports": true,

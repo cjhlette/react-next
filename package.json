@@ -17,10 +17,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/styled-jsx": "^2.2.8",
     "compression": "^1.7.3",
     "graphql": "^14.1.1",
     "graphql-tag": "^2.10.1",
     "next": "^8.0.3",
+    "next-ga": "^2.3.4",
     "node-sass": "^4.11.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",

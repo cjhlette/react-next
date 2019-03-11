@@ -20,9 +20,13 @@ module.exports = withTypescript(
 
       // import root path
       config.resolve.alias['@'] = path.join(__dirname, 'src');
-      config.resolve.alias['@styles'] = path.join(__dirname, 'src/styles')
-      config.resolve.alias['@pages'] = path.join(__dirname, 'src/pages')
-      config.resolve.alias['@components'] = path.join(__dirname, 'src/components')
+      config.resolve.alias['@styles'] = path.join(__dirname, 'src/styles');
+      config.resolve.alias['@pages'] = path.join(__dirname, 'src/pages');
+      config.resolve.alias['@components'] = path.join(
+        __dirname,
+        'src/components',
+      );
+      config.resolve.alias['@lib'] = path.join(__dirname, 'src/lib');
 
       return config;
     },
