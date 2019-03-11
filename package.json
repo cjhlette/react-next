@@ -6,10 +6,10 @@
   "scripts": {
     "dev-original": "next",
     "start-original": "next start",
-    "build": "next build",
+    "build": "next build src",
     "dev": "tsc && node server.js",
     "start": "NODE_ENV=production node server.js",
-    "preview": "next build && next export -o dist && http-server dist",
+    "preview": "next build src && next export src -o dist && http-server dist",
     "lint": "tslint -c ./tslint.json --exclude **/*.d.ts --exclude ./node_modules --project . --fix **/*.tsx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
