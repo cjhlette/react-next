@@ -1,6 +1,5 @@
 import React from 'react';
 import * as styles from '@styles/main.scss';
-// @ts-ignore
 import { Layout } from '@components/Layout';
 
 export default class extends React.Component {

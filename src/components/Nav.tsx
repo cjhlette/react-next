@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as styles from '../styles/main.scss';
+import * as styles from '@styles/main.scss';
 import Link from 'next/link';
 
 const Nav = () => {
