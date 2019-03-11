@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <hr/>
-        <Nav/>
+        <hr />
+        <Nav />
       </footer>
     </>
   );
