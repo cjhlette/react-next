@@ -1,5 +1,6 @@
 # 메인
-
+ - react / next.js / typescript / scss 레이아웃
+ 
 ## 산출가입 : calculation    
     - 자동차보험 산출/가입
     - 운전자보험 산출/가입
