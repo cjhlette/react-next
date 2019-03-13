@@ -1,0 +1,116 @@
+/* default */
+html {
+  font-size: 62.5%; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-family: 'notokr', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  -moz-osx-font-smoothing: grayscale; }
+
+body:before {
+  content: '';
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0; }
+
+/* fix webkit bug(scroll event delay) */
+body, div, h1, h2, h3, h4, h5, h6, form, fieldset, p, button, iframe, tr, tbody, thead, table, th, td, b, span, strong {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* layout */
+body {
+  font-size: 1.4rem;
+  letter-spacing: -0.05em;
+  line-height: 1.9rem;
+  font-weight: 300; }
+
+/* common */
+button {
+  border: 0;
+  font-family: 'notokr';
+  cursor: pointer;
+  background: transparent;
+  box-sizing: border-box;
+  color: #444; }
+
+/* header */
+._35JC9snXAuW7cuBJZ3WbKx {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5.3rem;
+  z-index: 3;
+  background: #1e78d0; }
+
+/* main */
+._1rtomhaYh7D9qC4BK2i-Hi {
+  min-height: 510px;
+  padding-top: 5rem; }
+
+/* footer */
+._316rP8B51HnKw4OTkJpmYf {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  margin-top: 4.0rem;
+  background: #eee;
+  border-top: 1px solid #e4e4e4;
+  text-align: center; }
+
+/* floating */
+._38uxLjVvPXRuQA7P-4aSJH {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background: #4b597c;
+  font-size: 0;
+  height: 5.5rem; }
+
+html,
+body {
+  background-color: #f7f7f7; }
+
+p {
+  margin: 0; }
+
+._3fd_9J-Yz2p4hlFR9gzequ {
+  display: flex;
+  justify-content: center; }
+
+.zxceq92bsJcxP1yp7rNfm {
+  display: flex;
+  justify-content: center; }
+
+._3rQZlt1XfH9psflV9-Z7Eq {
+  display: flex;
+  justify-content: space-around; }
+
+._1o2ylA1N57yLHwTzg4Wrep {
+  width: 350px;
+  display: block; }
+
+li:nth-child(odd) {
+  color: blue;
+  font-style: italic;
+  font-weight: bold; }
+
+li:nth-child(even) {
+  color: green;
+  text-decoration: underline; }
+
+._4KI04lidGtURDR5bU3VBh {
+  font-size: 2em;
+  color: #4c4c4c; }
+
