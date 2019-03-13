@@ -1,13 +1,13 @@
 import * as React from 'react';
-import * as styles from "@styles/main.scss";
+import * as layout from '@styles/layout.scss';
+import Nav from '@components/Nav';
 
 const Header = () => {
   return (
     <>
-      <header className={styles.header}>
-        <div>
-          <img src="/static/images/nextjs-logo.png" className={styles.logo} />
-        </div>
+      <header className={layout.base_header}>
+        <div>홈으로</div>
+        <Nav />
       </header>
     </>
   );

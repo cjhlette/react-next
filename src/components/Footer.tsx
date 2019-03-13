@@ -1,12 +1,20 @@
 import * as React from 'react';
-import Nav from '@components/Nav';
+import * as layout from '@styles/layout.scss';
 
 const Footer = () => {
   return (
     <>
-      <footer>
-        <hr />
-        <Nav />
+      <footer className={layout.base_footer}>
+        footer
+        <br />
+        footer
+        <br />
+        footer
+        <br />
+        footer
+        <br />
+        footer
+        <br />
       </footer>
     </>
   );

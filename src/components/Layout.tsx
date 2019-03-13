@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as styles from '@styles/main.scss';
+import * as layout from '@styles/layout.scss';
 import Head from 'next/head';
 
 import Header from '@components/Header';
@@ -35,9 +35,24 @@ export class Layout extends React.Component<Props> {
 
         <Header />
 
-        <article className={styles.container}>{this.props.children}</article>
+        <article className={layout.base_main}>{this.props.children}</article>
 
         <Footer />
+
+        <article className={layout.floating_menu}>
+          <button type="button" className="ico1">
+            <span>홈</span>
+          </button>
+          <button type="button" className="ico2">
+            <span>전체메뉴</span>
+          </button>
+          <button type="button" className="ico3">
+            <span>알림</span>
+          </button>
+          <button type="button" className="ico4">
+            <span>앱다운로드</span>
+          </button>
+        </article>
       </>
     );
   }
