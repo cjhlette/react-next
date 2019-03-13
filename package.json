@@ -6,7 +6,7 @@
   "scripts": {
     "dev-original": "next",
     "start-original": "next start",
-    "build": "next build src",
+    "build": "next build src && next export src -o dist",
     "dev": "tsc && node server.js",
     "start": "NODE_ENV=production node server.js",
     "preview": "next build src && next export src -o dist && http-server dist",
@@ -17,6 +17,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@material-ui/core": "^3.9.2",
     "@types/styled-jsx": "^2.2.8",
     "compression": "^1.7.3",
     "graphql": "^14.1.1",
