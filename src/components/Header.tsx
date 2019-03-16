@@ -6,7 +6,6 @@ const Header = () => {
   return (
     <>
       <header className={layout.base_header}>
-        <div>홈으로</div>
         <div><Nav /></div>
       </header>
     </>

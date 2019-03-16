@@ -22,10 +22,7 @@ class TemporaryDrawer extends React.Component<IProps> {
   }
 
   state = {
-    top: false,
-    left: false,
-    bottom: false,
-    right: false,
+    right: false
   };
 
   toggleDrawer = (side: any, open: any) => () => {
