@@ -8,7 +8,7 @@ import map from "core-js/fn/map";
 import set from "core-js/fn/set";
 import array from "core-js/es7/array";
 
-console.log('Load your polyfills');
+//console.log('Load your polyfills');
 
 String.prototype.includes = includes;
 String.prototype.repeat = repeat;
