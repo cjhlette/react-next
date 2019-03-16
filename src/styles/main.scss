@@ -29,6 +29,10 @@ p {
   display: block;
 }
 
+li {
+  margin-bottom: 5px;
+}
+
 li:nth-child(odd) {
   color: blue;
   font-style: italic;

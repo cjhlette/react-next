@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { withStyles } from '@material-ui/core/styles';
 import * as layout from '@styles/layout.scss';
+import * as nav from '@styles/nav.scss';
 import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
 
@@ -48,7 +49,7 @@ class TemporaryDrawer extends React.Component<IProps> {
             <Button onClick={this.toggleDrawer('right', false)}>[닫기]</Button>
             <hr/>
             <Link href="/">
-              <a>Home</a>
+              <a className={nav.btn_home}>Home</a>
             </Link>
             <hr/>
             <Link href="/contract">
