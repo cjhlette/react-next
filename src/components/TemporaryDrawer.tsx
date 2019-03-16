@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes, { Validator } from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
@@ -17,7 +16,13 @@ const styles = {
   },
 };
 
-class TemporaryDrawer extends React.Component {
+interface IProps {}
+
+class TemporaryDrawer extends React.Component<IProps> {
+  constructor(props: IProps) {
+    super(props);
+  }
+
   state = {
     top: false,
     left: false,
@@ -30,7 +35,6 @@ class TemporaryDrawer extends React.Component {
       [side]: open,
     });
   };
-  static propTypes: { classes: Validator<NonNullable<object>> };
 
   render() {
     // @ts-ignore
@@ -39,7 +43,7 @@ class TemporaryDrawer extends React.Component {
     const sideList = (
       <div className={classes.list}>
         <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text) => (
+          {['Inbox1', 'Starred', 'Send email', 'Drafts'].map(text => (
             <ListItem button key={text}>
               <ListItemText primary={text} />
             </ListItem>
@@ -47,7 +51,7 @@ class TemporaryDrawer extends React.Component {
         </List>
         <Divider />
         <List>
-          {['All mail', 'Trash', 'Spam'].map((text) => (
+          {['All mail', 'Trash', 'Spam'].map(text => (
             <ListItem button key={text}>
               <ListItemText primary={text} />
             </ListItem>
@@ -59,7 +63,7 @@ class TemporaryDrawer extends React.Component {
     const fullList = (
       <div className={classes.fullList}>
         <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text) => (
+          {['Inbox2', 'Starred', 'Send email', 'Drafts'].map(text => (
             <ListItem button key={text}>
               <ListItemText primary={text} />
             </ListItem>
@@ -67,7 +71,7 @@ class TemporaryDrawer extends React.Component {
         </List>
         <Divider />
         <List>
-          {['All mail', 'Trash', 'Spam'].map((text) => (
+          {['All mail', 'Trash', 'Spam'].map(text => (
             <ListItem button key={text}>
               <ListItemText primary={text} />
             </ListItem>
@@ -82,7 +86,10 @@ class TemporaryDrawer extends React.Component {
         <Button onClick={this.toggleDrawer('right', true)}>Open Right</Button>
         <Button onClick={this.toggleDrawer('top', true)}>Open Top</Button>
         <Button onClick={this.toggleDrawer('bottom', true)}>Open Bottom</Button>
-        <Drawer open={this.state.left} onClose={this.toggleDrawer('left', false)}>
+        <Drawer
+          open={this.state.left}
+          onClose={this.toggleDrawer('left', false)}
+        >
           <div
             tabIndex={0}
             role="button"
@@ -92,7 +99,11 @@ class TemporaryDrawer extends React.Component {
             {sideList}
           </div>
         </Drawer>
-        <Drawer anchor="top" open={this.state.top} onClose={this.toggleDrawer('top', false)}>
+        <Drawer
+          anchor="top"
+          open={this.state.top}
+          onClose={this.toggleDrawer('top', false)}
+        >
           <div
             tabIndex={0}
             role="button"
@@ -116,7 +127,11 @@ class TemporaryDrawer extends React.Component {
             {fullList}
           </div>
         </Drawer>
-        <Drawer anchor="right" open={this.state.right} onClose={this.toggleDrawer('right', false)}>
+        <Drawer
+          anchor="right"
+          open={this.state.right}
+          onClose={this.toggleDrawer('right', false)}
+        >
           <div
             tabIndex={0}
             role="button"
@@ -131,16 +146,4 @@ class TemporaryDrawer extends React.Component {
   }
 }
 
-TemporaryDrawer.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
 export default withStyles(styles)(TemporaryDrawer);
-
-// import { Layout } from "@components/Layout";
-//
-// export default () => (
-//   <Layout title="보상 !!">
-//     <pre>보상 메인</pre>
-//   </Layout>
-// );

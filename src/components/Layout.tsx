@@ -5,7 +5,6 @@ import Head from 'next/head';
 import Header from '@components/Header';
 import Footer from '@components/Footer';
 import { initGA, logPageView } from '@lib/analytics/analytics';
-import TemporaryDrawer from '@components/TemporaryDrawer';
 
 type Props = {
   title: string;
@@ -36,7 +35,7 @@ export class Layout extends React.Component<Props> {
 
         <Header />
 
-        <article className={layout.base_main}><TemporaryDrawer/>{this.props.children}</article>
+        <article className={layout.base_main}>{this.props.children}</article>
 
         <Footer />
 

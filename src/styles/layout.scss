@@ -27,6 +27,12 @@ button {
   height: 5.3rem;
   z-index: 3;
   background: #1e78d0;
+  div{
+    float:left;
+    height:60%;
+    border:1px solid #000000;
+    margin: 10px;
+  }
 }
 
 /* main */
@@ -44,6 +50,14 @@ button {
   background: #eee;
   border-top: 1px solid #e4e4e4;
   text-align: center;
+}
+
+/* 메뉴 navi */
+.base_nav {
+  width:280px;
+  a {
+    margin-left:50px;
+  }
 }
 
 /* floating */
