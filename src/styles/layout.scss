@@ -6,7 +6,7 @@ body:before{content:''; position:fixed; left:0; top:0; width:100%; height:0; }/*
 body, div, h1, h2, h3, h4, h5, h6, form, fieldset, p, button, iframe, tr, tbody, thead, table, th, td, b, span, strong{margin:0; padding:0; box-sizing:border-box; }
 
 /* layout */
-body{font-size:1.4rem; letter-spacing:-0.05em; line-height:1.9rem; font-weight:300; }
+body{font-size:1.6rem; letter-spacing:-0.05em; line-height:1.9rem; font-weight:300; }
 
 /* common */
 button {
@@ -39,6 +39,9 @@ button {
 .base_main {
   min-height: 510px;
   padding-top: 5rem;
+  pre {
+    margin : 20px;
+  }
 }
 
 /* footer */

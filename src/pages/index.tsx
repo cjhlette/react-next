@@ -15,7 +15,9 @@ export default class extends React.Component {
           <TemporaryDrawer/>
           <hr/>
           <div className="test1"> 페이지 style 1회성 클래스 주입 </div>
-          <div className={main.test2}> 페이지 scss 1회성 클래스 주입 </div>
+          <div className={main.test2}> 페이지 import scss 클래스 주입 </div>
+          <div>css 순서 : layout.scss -> import scss -> 페이지 style</div>
+          <hr/>
           contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>
           contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>
           contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>
@@ -27,7 +29,7 @@ export default class extends React.Component {
         {/* 페이지 style class 주입 예시 (상단 헤더에 scss 파일들 로드 아래 들어갑니다.) */}
         <style jsx>{`
         hr {
-          height: 5px;
+          background:#eee;
         }
         .test1 {
           color:green;

@@ -1,7 +1,7 @@
 import { Layout } from "@components/Layout";
 
 export default () => (
-  <Layout title="산출1 !!">
-    <pre>산출1 메인</pre>
+  <Layout title="상품2 !!">
+    <pre>상품2 상품설명 등등</pre>
   </Layout>
 );

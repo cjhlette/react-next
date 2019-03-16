@@ -1,7 +1,7 @@
 import { Layout } from "@components/Layout";
 
 export default () => (
-  <Layout title="해외여행 산출 !!">
-    <pre>해외여행 산출 메인</pre>
+  <Layout title="산출2 !!">
+    <pre>산출2 메인</pre>
   </Layout>
 );

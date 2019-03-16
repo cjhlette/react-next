@@ -45,6 +45,8 @@ class TemporaryDrawer extends React.Component<IProps> {
         >
 
           <nav className={layout.base_nav}>
+            <Button onClick={this.toggleDrawer('right', false)}>[닫기]</Button>
+            <hr/>
             <Link href="/">
               <a>Home</a>
             </Link>

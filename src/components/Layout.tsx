@@ -41,16 +41,16 @@ export class Layout extends React.Component<Props> {
 
         <article className={layout.floating_menu}>
           <button type="button" className="ico1">
-            <span>홈</span>
+            <span>버튼1</span>
           </button>
           <button type="button" className="ico2">
-            <span>전체메뉴</span>
+            <span>버튼2</span>
           </button>
           <button type="button" className="ico3">
-            <span>알림</span>
+            <span>버튼3</span>
           </button>
           <button type="button" className="ico4">
-            <span>앱다운로드</span>
+            <span>버튼4</span>
           </button>
         </article>
       </>
