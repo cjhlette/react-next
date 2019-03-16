@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "experimentalDecorators": true,
     "jsx": "preserve",
     "target": "es5",
     "lib": [
@@ -11,7 +12,11 @@
       "@pages/*": ["./src/pages/*"],
       "@static/*": ["./src/static/*"],
       "@styles/*": ["./src/styles/*"],
-      "@lib/*": ["./src/lib/*"]
+      "@lib/*": ["./src/lib/*"],
+      "@material-ui/core": ["./material-ui/src"],
+      "@material-ui/core/*": ["./material-ui/src/*"],
+      "@material-ui/lab": ["./material-ui-lab/src"],
+      "@material-ui/lab/*": ["./material-ui-lab/src/*"]
     },
     "allowJs": true,
     "allowSyntheticDefaultImports": true,

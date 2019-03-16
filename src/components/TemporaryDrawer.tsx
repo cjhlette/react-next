@@ -1,5 +1,5 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import { WithStyles, withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
@@ -16,7 +16,7 @@ const styles = {
   },
 };
 
-interface IProps {}
+interface IProps extends WithStyles<typeof styles>{}
 
 class TemporaryDrawer extends React.Component<IProps> {
   constructor(props: IProps) {
@@ -37,7 +37,6 @@ class TemporaryDrawer extends React.Component<IProps> {
   };
 
   render() {
-    // @ts-ignore
     const { classes } = this.props;
 
     const sideList = (

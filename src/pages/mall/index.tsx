@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { withRouter } from 'next/router';
 
 class MyLink extends React.Component {
+
   componentDidMount() {
     // @ts-ignore
     const { router } = this.props;
