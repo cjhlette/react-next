@@ -1,18 +1,19 @@
 import React from 'react';
 import { Layout } from '@components/Layout';
 import Link from 'next/link';
-import { withRouter } from 'next/router';
+import { withRouter, SingletonRouter } from 'next/router';
 
-class MyLink extends React.Component {
+interface Props {
+  router?: SingletonRouter;
+}
 
+class MyLink extends React.Component<Props> {
   componentDidMount() {
-    // @ts-ignore
     const { router } = this.props;
     router.prefetch('/calculation/car');
   }
 
   render() {
-    // @ts-ignore
     const { router } = this.props;
 
     return (
