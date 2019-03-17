@@ -1,7 +1,9 @@
 import React from 'react';
+
 import { Layout } from '@components/Layout';
 import TemporaryDrawer from '@components/TemporaryDrawer';
-import * as main from '@styles/main.scss';
+
+import main from '@styles/main.scss';
 
 export default class extends React.Component {
   render() {

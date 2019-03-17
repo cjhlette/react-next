@@ -1,6 +1,7 @@
-import * as React from 'react';
-import * as layout from '@styles/layout.scss';
+import React from 'react';
 import Head from 'next/head';
+
+import layout from '@styles/layout.scss';
 
 import Header from '@components/Header';
 import Footer from '@components/Footer';

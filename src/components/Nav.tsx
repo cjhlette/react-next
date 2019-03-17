@@ -1,8 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
+
+import layout from '@styles/layout.scss';
+import nav from '@styles/nav.scss';
+
 import { withStyles } from '@material-ui/core/styles';
-import * as layout from '@styles/layout.scss';
-import * as nav from '@styles/nav.scss';
 import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
 

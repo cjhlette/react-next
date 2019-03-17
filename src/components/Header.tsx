@@ -1,7 +1,8 @@
-import * as React from 'react';
-import * as layout from '@styles/layout.scss';
-import Nav from '@components/Nav';
+import React from 'react';
 import Link from 'next/link';
+
+import layout from '@styles/layout.scss';
+import Nav from '@components/Nav';
 
 const Header = () => {
   return (
