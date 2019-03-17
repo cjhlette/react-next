@@ -19,7 +19,7 @@ const styles = {
 
 interface IProps {}
 
-class TemporaryDrawer extends React.Component<IProps> {
+class Nav extends React.Component<IProps> {
   constructor(props: IProps) {
     super(props);
   }
@@ -82,4 +82,4 @@ class TemporaryDrawer extends React.Component<IProps> {
   }
 }
 
-export default withStyles(styles)(TemporaryDrawer);
+export default withStyles(styles)(Nav);

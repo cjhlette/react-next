@@ -18,8 +18,10 @@ export default class extends React.Component {
           <hr/>
           <div className="test1"> 페이지 style 1회성 클래스 주입 </div>
           <div className={main.test2}> 페이지 import scss 클래스 주입 </div>
+          <div style={{ color: 'blue' }}> tag 인라인 스타일 주입 </div>
           <div>css 순서 : layout.scss -> page import scss -> 페이지 style</div>
           <hr/>
+          2222
           contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>
           contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>
           contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>

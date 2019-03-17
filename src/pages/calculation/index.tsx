@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { withRouter, SingletonRouter } from 'next/router';
 
 interface Props {
-  router?: SingletonRouter;
+  router: SingletonRouter;
 }
 
 class MyLink extends React.Component<Props> {
@@ -15,7 +15,6 @@ class MyLink extends React.Component<Props> {
 
   render() {
     const { router } = this.props;
-
     return (
       <Layout title="산출가입 !!">
         <pre>산출가입 메인</pre>
