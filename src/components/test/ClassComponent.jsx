@@ -2,14 +2,8 @@ import * as React from 'react';
 
 import Count from './FunctionComponent';
 
-interface Props {}
-
-interface State {
-  count: number;
-}
-
-export default class Counter extends React.Component<Props, State> {
-  state: State = {
+export default class Counter extends React.Component {
+  state = {
     count: 0,
   };
 

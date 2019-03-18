@@ -17,10 +17,8 @@ const styles = {
   },
 };
 
-interface IProps {}
-
-class Nav extends React.Component<IProps> {
-  constructor(props: IProps) {
+class Nav extends React.Component{
+  constructor(props) {
     super(props);
   }
 
@@ -28,7 +26,7 @@ class Nav extends React.Component<IProps> {
     right: false
   };
 
-  toggleDrawer = (side: any, open: any) => () => {
+  toggleDrawer = (side, open) => () => {
     this.setState({
       [side]: open,
     });

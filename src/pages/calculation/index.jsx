@@ -3,11 +3,7 @@ import { Layout } from '@components/Layout';
 import Link from 'next/link';
 import { withRouter, SingletonRouter } from 'next/router';
 
-interface Props {
-  router: SingletonRouter;
-}
-
-class MyLink extends React.Component<Props> {
+class MyLink extends React.Component{
   componentDidMount() {
     const { router } = this.props;
     router.prefetch('/calculation/car');

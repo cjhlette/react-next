@@ -9,18 +9,7 @@ import FooterFloating from '@components/FooterFloating';
 
 import { initGA, logPageView } from '@lib/analytics/analytics';
 
-type Props = {
-  title: string;
-  children: any;
-};
-
-declare global {
-  interface Window {
-    GA_INITIALIZED: any;
-  }
-}
-
-export class Layout extends React.Component<Props> {
+export class Layout extends React.Component {
   componentDidMount() {
     if (!window.GA_INITIALIZED) {
       initGA();

@@ -1,9 +1,7 @@
-const withTypescript = require('@zeit/next-typescript');
 const withSass = require('@zeit/next-sass');
 const path = require('path');
 
-module.exports = withTypescript(
-  withSass({
+module.exports = withSass({
     webpack: (config, options) => {
       // Unshift polyfills in main entrypoint.
       const originalEntry = config.entry;
@@ -35,5 +33,4 @@ module.exports = withTypescript(
     // typescriptLoaderOptions: {
     //   transpileOnly: false,
     // },
-  }),
-);
+  })

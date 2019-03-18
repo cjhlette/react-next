@@ -17,10 +17,8 @@ const styles = {
   },
 };
 
-interface IProps extends WithStyles<typeof styles>{}
-
-class TemporaryDrawer extends React.Component<IProps> {
-  constructor(props: IProps) {
+class TemporaryDrawer extends React.Component {
+  constructor(props) {
     super(props);
   }
 
@@ -31,7 +29,7 @@ class TemporaryDrawer extends React.Component<IProps> {
     right: false,
   };
 
-  toggleDrawer = (side: any, open: any) => () => {
+  toggleDrawer = (side, open) => () => {
     this.setState({
       [side]: open,
     });

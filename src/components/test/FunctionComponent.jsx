@@ -1,8 +1,6 @@
 import * as React from 'react';
 
-const Count: React.FunctionComponent<{
-  count: number;
-}> = props => {
+function Count(props) {
   return <h1>{props.count}</h1>;
 };
 
