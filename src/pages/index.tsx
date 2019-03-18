@@ -4,6 +4,7 @@ import { Layout } from '@components/Layout';
 import TemporaryDrawer from '@components/TemporaryDrawer';
 
 import main from '@styles/main.scss';
+import ClassComponent from '@components/test/ClassComponent';
 
 export default class extends React.Component {
   render() {
@@ -21,7 +22,8 @@ export default class extends React.Component {
           <div style={{ color: 'blue' }}> tag 인라인 스타일 주입 </div>
           <div>css 순서 : layout.scss -> page import scss -> 페이지 style</div>
           <hr/>
-          2222
+          <ClassComponent />
+          <hr/>
           contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>
           contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>
           contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>
