@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import DialogTitle from '@material-ui/core/DialogTitle';
@@ -7,15 +7,8 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogActions from '@material-ui/core/DialogActions';
 import Typography from '@material-ui/core/Typography';
-import { withStyles } from '@material-ui/core/styles';
-import Link from 'next/link';
 
-const styles = theme => ({
-  root: {
-    textAlign: 'center',
-    paddingTop: theme.spacing.unit * 5,
-  },
-});
+import Link from 'next/link';
 
 class Index extends React.Component {
   state = {
@@ -39,11 +32,15 @@ class Index extends React.Component {
     const { open } = this.state;
 
     return (
-      <div className={classes.root}>
+      <div style={{ textAlign: 'center' }}>
         <Dialog open={open} onClose={this.handleClose}>
-          <DialogTitle>Super Secret Password</DialogTitle>
+          <DialogTitle>테스트 Dialog</DialogTitle>
           <DialogContent>
-            <DialogContentText>1-2-3-4-5</DialogContentText>
+            <DialogContentText>
+              내용!!!!!!!!!!!!!!!!!!!!!!!!!!<br/>
+              내용!!!!!!!!!!!!!!!!!!!!!!!!!!<br/>
+              내용!!!!!!!!!!!!!!!!!!!!!!!!!!<br/>
+            </DialogContentText>
           </DialogContent>
           <DialogActions>
             <Button color="primary" onClick={this.handleClose}>
@@ -51,19 +48,19 @@ class Index extends React.Component {
             </Button>
           </DialogActions>
         </Dialog>
+
         <Typography variant="h4" gutterBottom>
           Material-UI
         </Typography>
         <Typography variant="subtitle1" gutterBottom>
           example project
         </Typography>
-        <Typography gutterBottom>
-          <Link href="/">
-            <a>Go to the about page</a>
-          </Link>
-        </Typography>
-        <Button variant="contained" color="secondary" onClick={this.handleClick}>
-          Super Secret Password
+        <Button
+          variant="contained"
+          color="secondary"
+          onClick={this.handleClick}
+        >
+          테스트 메세지 레이어
         </Button>
       </div>
     );
@@ -71,7 +68,7 @@ class Index extends React.Component {
 }
 
 Index.propTypes = {
-  classes: PropTypes.object.isRequired,
+  // classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Index);
+export default Index;

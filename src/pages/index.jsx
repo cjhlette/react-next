@@ -24,6 +24,7 @@ export default class extends React.Component {
           <div>css 순서 : layout.scss -> page import scss -> 페이지 style</div>
           <hr/>
           <ClassComponent />
+          <hr/>
           <Button />
           <hr/>
           contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>
