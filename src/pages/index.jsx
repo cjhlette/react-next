@@ -15,6 +15,12 @@ export default class extends React.Component {
           <hr/>
           구글클라우드 + Nginx 웹서버 + http/2.0 + 리엑트
           <hr/>
+          로딩은 없어야합니다.
+          <hr/>
+          회사명이 뭔가요.. 도메인주소 살거도 생각...
+          <hr/>
+          채널 인터넷 막히면 큰일나요...<br/>번쩍번쩍 옛날사이트처럼 만들어질거에요.
+          <hr/>
           Drawer 테스트
           <TemporaryDrawer/>
           <hr/>

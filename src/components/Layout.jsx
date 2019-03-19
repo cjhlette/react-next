@@ -25,7 +25,7 @@ export class Layout extends React.Component {
           <title>{this.props.title}</title>
         </Head>
 
-        <Header />
+        <Header title={this.props.title}/>
 
         <article className={layout.base_main}>{this.props.children}</article>
 
