@@ -1,7 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
-import { withStyles } from '@material-ui/core/styles';
+// import { withStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import Icon from '@material-ui/core/Icon';
@@ -10,12 +10,6 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 import * as layout from '@styles/layout.scss';
-
-const styles = {
-  root: {
-    width: 500,
-  },
-};
 
 class FooterFloating extends React.Component {
   state = {
@@ -27,12 +21,11 @@ class FooterFloating extends React.Component {
   };
 
   render() {
-    const { classes } = this.props;
     const { value } = this.state;
 
     return (
       <article className={layout.floating_menu}>
-      <BottomNavigation value={value} onChange={this.handleChange} className={classes.root}>
+      <BottomNavigation value={value} onChange={this.handleChange} >
         <BottomNavigationAction label="Recents" value="recents" icon={<RestoreIcon />} />
         <BottomNavigationAction label="Favorites" value="favorites" icon={<FavoriteIcon />} />
         <BottomNavigationAction label="Nearby" value="nearby" icon={<LocationOnIcon />} />
@@ -44,7 +37,7 @@ class FooterFloating extends React.Component {
 }
 
 FooterFloating.propTypes = {
-  classes: PropTypes.object.isRequired,
+  //classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(FooterFloating);
+export default FooterFloating;
