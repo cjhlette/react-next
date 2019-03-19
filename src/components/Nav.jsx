@@ -1,12 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import MenuIcon from '@material-ui/icons/Menu';
+import Drawer from '@material-ui/core/Drawer';
+import Button from '@material-ui/core/Button';
 
 import layout from '@styles/layout.scss';
 import nav from '@styles/nav.scss';
-
-import { withStyles } from '@material-ui/core/styles';
-import Drawer from '@material-ui/core/Drawer';
-import Button from '@material-ui/core/Button';
 
 const styles = {
   list: {
@@ -36,7 +37,8 @@ class Nav extends React.Component{
     return (
       <>
         {/*메뉴버튼*/}
-        <Button onClick={this.toggleDrawer('right', true)}>[메뉴]</Button>
+        {/*<Button onClick={this.toggleDrawer('right', true)}>[메뉴]</Button>*/}
+        <MenuIcon onClick={this.toggleDrawer('right', true)}/>
 
         {/*튀어나오는 메뉴*/}
         <Drawer
@@ -79,5 +81,9 @@ class Nav extends React.Component{
     );
   }
 }
+
+Nav.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
 
 export default withStyles(styles)(Nav);

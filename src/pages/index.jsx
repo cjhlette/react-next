@@ -5,6 +5,7 @@ import TemporaryDrawer from '@components/TemporaryDrawer';
 
 import main from '@styles/main.scss';
 import ClassComponent from '@components/test/ClassComponent';
+import Button from '../components/base/Button';
 
 export default class extends React.Component {
   render() {
@@ -23,6 +24,7 @@ export default class extends React.Component {
           <div>css 순서 : layout.scss -> page import scss -> 페이지 style</div>
           <hr/>
           <ClassComponent />
+          <Button />
           <hr/>
           contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>
           contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>
