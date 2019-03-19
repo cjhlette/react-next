@@ -3,11 +3,25 @@ import React from 'react';
 import { Layout } from '@components/Layout';
 import TemporaryDrawer from '@components/TemporaryDrawer';
 
+import { FormControl, Input, InputLabel, TextField } from '@material-ui/core';
+
 import main from '@styles/main.scss';
 import ClassComponent from '@components/test/ClassComponent';
 import Button from '../components/base/Button';
 
 export default class extends React.Component {
+
+  state = {
+    name: 'Cat in the Hat',
+    age: '',
+    multiline: 'Controlled',
+    currency: 'EUR',
+  };
+
+  handleChange = name => event => {
+    this.setState({ [name]: event.target.value });
+  };
+
   render() {
     return (
       <>
@@ -33,6 +47,15 @@ export default class extends React.Component {
           <hr/>
           <Button />
           <hr/>
+          - Test 입력<br/>
+          <TextField
+            id="standard-name"
+            label="Name"
+            onChange={this.handleChange('name')}
+            margin="normal"
+          />
+          <hr/>
+
           contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>
           contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>
           contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>
