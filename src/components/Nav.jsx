@@ -6,8 +6,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
 
-import layout from '@styles/layout.scss';
-import nav from '@styles/nav.scss';
+import layout from 'styles/layout.scss';
+import nav from 'styles/nav.scss';
 
 const styles = {
   list: {

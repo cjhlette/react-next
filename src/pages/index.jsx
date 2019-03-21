@@ -1,13 +1,11 @@
 import React from 'react';
 
-import { Layout } from '@components/Layout';
-import TemporaryDrawer from '@components/TemporaryDrawer';
+import { Layout } from 'components/Layout';
 
-import { FormControl, Input, InputLabel, TextField } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 
-import main from '@styles/main.scss';
-import ClassComponent from '@components/test/ClassComponent';
-import Button from '../components/base/Button';
+import main from 'styles/main.scss';
+import ClassComponent from 'components/test/ClassComponent';
 
 export default class extends React.Component {
 
@@ -31,12 +29,10 @@ export default class extends React.Component {
           <hr/>
           로딩시간은 최소한으로.....
           <hr/>
-          회사명이 뭔가요.. 도메인주소 살거도 생각...
+          주황이라........
           <hr/>
-          채널 인터넷 막히면 큰일나요...<br/>번쩍번쩍 옛날사이트처럼 만들어질거에요.
-          <hr/>
-          Drawer 테스트
-          <TemporaryDrawer/>
+          채널 인터넷 막히면 큰일나요...<br/>번쩍번쩍 옛날사이트처럼 만들어질거에요.<br/>
+          모두가 우와! 할수있게..
           <hr/>
           <div className="test1"> 페이지 style 1회성 클래스 주입 </div>
           <div className={main.test2}> 페이지 import scss 클래스 주입 </div>
@@ -45,15 +41,11 @@ export default class extends React.Component {
           <hr/>
           <ClassComponent />
           <hr/>
-          <Button />
-          <hr/>
-          - Test 입력<br/>
-          <TextField
-            id="standard-name"
-            label="Name"
-            onChange={this.handleChange('name')}
-            margin="normal"
-          />
+          <Button variant="contained" color="primary" className=".test1"
+            onClick={() => console.log('clicked!')}
+          >
+            Click Console log
+          </Button>
           <hr/>
 
           contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>
