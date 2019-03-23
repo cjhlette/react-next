@@ -29,5 +29,8 @@ module.exports = withSass({
     cssLoaderOptions: {
       importLoaders: 1,
       localIdentName: "[local]",
+    },
+    sassLoaderOptions: {
+      includePaths: ['node_modules', 'node_modules/@material/*']
     }
   })
