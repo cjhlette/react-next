@@ -4,7 +4,7 @@ import { Layout } from '#components/mobile/Layout'
 
 import main from '#styles/mobile/main.scss';
 
-export class MobileMain extends React.Component {
+export class MobileIndex extends React.Component {
 
   render() {
     return (
@@ -51,4 +51,4 @@ export class MobileMain extends React.Component {
   }
 };
 
-export default MobileMain;
+export default MobileIndex;

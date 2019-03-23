@@ -1,7 +1,7 @@
 import React from 'react';
 import uaParser from 'useragent-parser-js';
-import { MobileMain } from '#components/mobile/Main';
-import { PcMain } from '#components/pc/Main';
+import { MobileIndex } from '#components/mobile/Index';
+import { PcIndex } from '#components/pc/base/Index';
 
 export default class extends React.Component {
   /**
@@ -15,7 +15,7 @@ export default class extends React.Component {
 
     let layout;
 
-    ua.isMobile ? (layout = <MobileMain />) : (layout = <PcMain />);
+    ua.isMobile ? (layout = <MobileIndex />) : (layout = <PcIndex />);
 
     return layout;
   }

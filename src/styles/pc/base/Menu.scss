@@ -1,0 +1,30 @@
+.Menu {
+  ul {
+    list-style: none;
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    li {
+      min-width: 5rem;
+      list-style: none;
+      padding-top: 0.9rem;
+      padding-bottom: 0.9rem;
+      padding-left: 1rem;
+      background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      &:hover {
+        background: linear-gradient(to right, #3f7f92 0%, #330867 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      i {
+        vertical-align: middle;
+        margin-right: 0.5rem;
+        background: linear-gradient(to right, #3f7f92 0%, #330867 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  text-decoration: none;
+  background: pink;
+  padding: 1rem;
+  color: #fff;
+  &:hover {
+    background: #cdcdec;
+  }
+  & + & {
+    margin-left: 1rem;
+  }
+}
+
+.btn.big {
+  width: 50%;
+  text-decoration: none;
+  padding: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background: pink;
+  color: #fff;
+  &:hover {
+    background: #cdcdec;
+  }
+  & + & {
+    margin-left: 1rem;
+  }
+}
+
+.btn.big.disable {
+  cursor: not-allowed;
+  background: #eeeded;
+  color: #afaaaa;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}

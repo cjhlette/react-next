@@ -1,0 +1,31 @@
+@import './common';
+
+.SideMenu {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      padding-left: 1rem;
+      border-left: 3px solid transparent;
+      transition: 0.125s all ease-in;
+      border-left: 3px solid transparent;
+      transition: 0.125s all ease-in;
+      line-height: 2.5rem;
+      svg {
+        margin-right: 1rem;
+        font-size: 1.5rem;
+      }
+      &:hover {
+        background: #e4f5ef;
+        border-color: #64e4bb;
+        color: #646879;
+        //font-weight: bold;
+      }
+      a {
+        text-decoration: none;
+        color: #5f6c8b;
+      }
+    }
+  }
+}

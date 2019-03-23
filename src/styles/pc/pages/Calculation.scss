@@ -1,0 +1,8 @@
+.calcTransition-appear {
+  opacity: 0;
+}
+
+.calcTransition-appear.calcTransition-appear-active {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
