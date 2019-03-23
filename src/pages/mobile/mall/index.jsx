@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { Layout } from '#components/mobile/Layout';
+import { Layout } from "#components/mobile/base/Layout";
 
 export default () => (
   <Layout title="상품몰 !!">

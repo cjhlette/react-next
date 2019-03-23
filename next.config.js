@@ -23,20 +23,11 @@ module.exports = withSass({
       config.resolve.alias['#components'] = path.join(__dirname,'src/components',);
       config.resolve.alias['#lib'] = path.join(__dirname, 'src/lib');
 
-      // config.resolve.alias = {
-      //   '#': path.join(__dirname, 'src'),
-      //   '#styles': path.join(__dirname, 'src/styles'),
-      //   '#pages': path.join(__dirname, 'src/pages'),
-      //   '#components': path.join(__dirname, 'src/components'),
-      //   '#lib': path.join(__dirname, 'src/lib')
-      // }
-
-
       return config;
     },
     cssModules: true,
-    sassLoaderOptions: {},
-    // typescriptLoaderOptions: {
-    //   transpileOnly: false,
-    // },
+    cssLoaderOptions: {
+      importLoaders: 1,
+      localIdentName: "[local]",
+    }
   })

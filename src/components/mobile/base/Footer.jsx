@@ -1,5 +1,5 @@
 import React from 'react';
-import layout from '#styles/mobile/layout.scss';
+import layout from '#styles/mobile/base/Layout.scss';
 
 const Footer = () => {
   return (

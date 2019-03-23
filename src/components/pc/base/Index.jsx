@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Layout from '#components/pc/base/Layout'
+import { Layout } from '#components/pc/base/Layout'
 
 export class PcIndex extends React.Component {
 

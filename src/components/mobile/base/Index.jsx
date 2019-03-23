@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Layout } from '#components/mobile/Layout'
+import { Layout } from '#components/mobile/base/Layout'
 
-import main from '#styles/mobile/main.scss';
+import main from '#styles/mobile/base/Main.scss';
 
 export class MobileIndex extends React.Component {
 

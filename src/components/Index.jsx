@@ -1,6 +1,6 @@
 import React from 'react';
 import uaParser from 'useragent-parser-js';
-import { MobileIndex } from '#components/mobile/Index';
+import { MobileIndex } from '#components/mobile/base/Index';
 import { PcIndex } from '#components/pc/base/Index';
 
 export default class extends React.Component {

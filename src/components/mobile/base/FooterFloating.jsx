@@ -7,7 +7,7 @@ import RestoreIcon from '@material-ui/icons/Restore';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 
-import * as layout from '#styles/mobile/layout.scss';
+import layout from '#styles/mobile/base/Layout.scss';
 
 class FooterFloating extends React.Component {
   state = {

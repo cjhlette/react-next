@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 
-import Nav from '#components/mobile/Nav';
+import Nav from '#components/mobile/base/Nav';
 
-import layout from '#styles/mobile/layout.scss';
+import layout from '#styles/mobile/base/Layout.scss';
 
 const Header = (props) => {
 

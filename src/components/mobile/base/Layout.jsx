@@ -1,21 +1,28 @@
 import React from 'react';
 import Head from 'next/head';
 
-import layout from '#styles/mobile/layout.scss';
+import layout from '#styles/mobile/base/Layout.scss';
 
-import Header from '#components/mobile/Header';
-import Footer from '#components/mobile/Footer';
-import FooterFloating from '#components/mobile/FooterFloating';
+import Header from '#components/mobile/base/Header';
+import Footer from '#components/mobile/base/Footer';
+import FooterFloating from '#components/mobile/base/FooterFloating';
 
 import { initGA, logPageView } from '#lib/analytics/analytics';
 
 export class Layout extends React.Component {
+
   componentDidMount() {
+
+    // 모바일용 껍데기 class 주입
+    document.getElementById('__next').classList.add('MobileWrapper');
+
+    // google ga script
     if (!window.GA_INITIALIZED) {
       initGA();
       window.GA_INITIALIZED = true;
     }
     logPageView();
+
   }
 
   render() {
@@ -32,6 +39,7 @@ export class Layout extends React.Component {
         <Footer />
 
         <FooterFloating />
+
       </>
     );
   }

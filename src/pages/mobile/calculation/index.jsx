@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout } from "#components/mobile/Layout";
+import { Layout } from "#components/mobile/base/Layout";
 import Link from 'next/link';
 import { withRouter, SingletonRouter } from 'next/router';
 

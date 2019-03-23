@@ -5,17 +5,9 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 
-import layout from '#styles/mobile/layout.scss';
-import nav from '#styles/mobile/nav.scss';
+import nav from '#styles/mobile/base/Nav.scss';
 
-const styles = {
-  list: {
-    width: '100%',
-  },
-  fullList: {
-    width: 'auto',
-  },
-};
+const styles = {};
 
 class Nav extends React.Component{
   constructor(props) {
@@ -48,7 +40,7 @@ class Nav extends React.Component{
           onClose={this.toggleDrawer('right', false)}
         >
 
-          <nav className={layout.base_nav}>
+          <nav className={nav.base_nav}>
             {/*<Button onClick={this.toggleDrawer('right', false)}>[닫기]</Button>*/}
             <hr/>
             <Link href="/">
