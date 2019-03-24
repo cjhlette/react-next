@@ -15,6 +15,7 @@ export class Layout extends React.Component {
     document.getElementById('__next').classList.add('MobileWrapper');
 
     // google ga script
+    document.title = this.props.title
     if (!window.GA_INITIALIZED) {
       initGA();
       window.GA_INITIALIZED = true;

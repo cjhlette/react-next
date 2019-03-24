@@ -6,9 +6,11 @@ export const initGA = () => {
 };
 
 export const logPageView = () => {
+  // console.log(window.location.pathname);
+  // console.log(document.title);
   //console.log('Logging pageview for ${window.location.pathname}');
   ReactGA.set({ page: window.location.pathname });
-  ReactGA.pageview(window.location.pathname);
+  ReactGA.pageview(window.location.pathname,'',document.title);
 };
 
 export const logEvent = (category = '', action = '') => {

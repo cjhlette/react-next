@@ -14,6 +14,7 @@ export class Layout extends React.Component {
     document.getElementById('__next').classList.add('PcWrapper');
 
     // google ga script
+    document.title = this.props.title
     if (!window.GA_INITIALIZED) {
       initGA();
       window.GA_INITIALIZED = true;
