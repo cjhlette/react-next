@@ -25,7 +25,7 @@ export default class extends React.Component {
     if (ua.isMobile ) html.classList.add('mobile');
     if (ua.isTablet ) html.classList.add('tablet');
     if (ua.os) html.classList.add(ua.os.replace(/(\s*)/g,'').toLowerCase());
-    if (ua.platform) html.classList.add(ua.platform.toLowerCase());
+    if (ua.platform) html.classList.add(ua.platform.replace(/(\s*)/g,'').toLowerCase());
     if (ua.browser ) html.classList.add(ua.browser.toLowerCase());
 
     this.setState({ua,userAgent})
