@@ -1,8 +1,5 @@
-/* MobileWrapper */
 .MobileWrapper{
-
-  /* header */
-  .base_header {
+  header{
     flexGrow: 1;
     position: fixed;
     top: 0;
@@ -10,20 +7,16 @@
     width: 100%;
     height: 3.3rem;
     z-index: 3;
-    background: #9c27b0;
+    background: limegreen;
   }
-
-  /* main */
-  .base_main {
+  article.main_conent{
     min-height: 510px;
     padding-top: 5rem;
     pre {
       margin : 20px;
     }
   }
-
-  /* footer */
-  .base_footer {
+  footer{
     position: relative;
     width: 100%;
     z-index: 0;
@@ -33,15 +26,14 @@
     text-align: center;
     padding-bottom:5.5rem;
   }
-
   /* floating */
-  .floating_menu {
+  article.floating_menu {
     position: fixed;
     bottom: 0;
     left: 0;
     z-index: 1;
     width: 100%;
-    background: #6200ee;
+    background: coral;
     font-size: 0;
     height: 5.5rem;
   }

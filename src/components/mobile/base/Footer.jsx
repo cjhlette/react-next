@@ -1,10 +1,9 @@
 import React from 'react';
-import layout from '#styles/mobile/base/Layout.scss';
 
-const Footer = () => {
-  return (
-    <>
-      <footer className={layout.base_footer}>
+export class Footer extends React.Component {
+  render() {
+    return (
+      <footer>
         footer
         <br />
         footer
@@ -16,8 +15,6 @@ const Footer = () => {
         footer
         <br />
       </footer>
-    </>
-  );
-};
-
-export default Footer;
+    );
+  }
+}

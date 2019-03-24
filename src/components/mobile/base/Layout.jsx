@@ -1,18 +1,16 @@
 import React from 'react';
 import Head from 'next/head';
 
-import layout from '#styles/mobile/base/Layout.scss';
+import LayoutStyles from '#styles/mobile/base/Layout.scss';
 
-import Header from '#components/mobile/base/Header';
-import Footer from '#components/mobile/base/Footer';
-import FooterFloating from '#components/mobile/base/FooterFloating';
+import { Header } from '#components/mobile/base/Header';
+import { Footer } from '#components/mobile/base/Footer';
 
 import { initGA, logPageView } from '#lib/analytics/analytics';
+import FooterFloating from '#components/mobile/base/FooterFloating';
 
 export class Layout extends React.Component {
-
   componentDidMount() {
-
     // 모바일용 껍데기 class 주입
     document.getElementById('__next').classList.add('MobileWrapper');
 
@@ -22,7 +20,6 @@ export class Layout extends React.Component {
       window.GA_INITIALIZED = true;
     }
     logPageView();
-
   }
 
   render() {
@@ -32,14 +29,14 @@ export class Layout extends React.Component {
           <title>{this.props.title}</title>
         </Head>
 
-        <Header title={this.props.title}/>
+        <Header title={this.props.title} />
 
-        <article className={layout.base_main}>{this.props.children}</article>
+        <article className={LayoutStyles.main_conent}>
+          {this.props.children}
+        </article>
 
         <Footer />
-
         <FooterFloating />
-
       </>
     );
   }

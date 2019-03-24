@@ -9,26 +9,25 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <html lang="ko">
-      <head>
-        <meta charSet="utf-8" />
-        <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
-        />
-        <link
-          rel="shortcut icon"
-          href="/static/favicon.ico"
-          type="image/x-icon"
-        />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-        <style>{`body { margin: 0 } /* custom! */`}</style>
-      </head>
-      <body className="custom_class">
-      <Main />
-      <NextScript />
-      </body>
-      </html>
+      <Html lang="ko">
+        <Head>
+          <meta charSet="utf-8" />
+          <meta
+            name="viewport"
+            content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
+          />
+          <link
+            rel="shortcut icon"
+            href="/static/favicon.ico"
+            type="image/x-icon"
+          />
+          <style>{`body { margin: 0 } /* custom! */`}</style>
+        </Head>
+        <body className="custom_class">
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
     );
   }
 }

@@ -1,19 +1,15 @@
 import React from 'react';
 import Head from 'next/head';
 
-import LayoutClass from '#styles/pc/base/Layout.scss';
+import LayoutStyles from '#styles/pc/base/Layout.scss';
 
-import Header from '#components/pc/base/Header';
-import Footer from '#components/pc/base/Footer';
+import { Header } from '#components/pc/base/Header';
+import { Footer } from '#components/pc/base/Footer';
 
 import { initGA, logPageView } from '#lib/analytics/analytics';
 
-import SideMenu from './SideMenu';
-
 export class Layout extends React.Component {
-
   componentDidMount() {
-
     // PC용 껍데기 class 주입
     document.getElementById('__next').classList.add('PcWrapper');
 
@@ -23,7 +19,6 @@ export class Layout extends React.Component {
       window.GA_INITIALIZED = true;
     }
     logPageView();
-
   }
 
   render() {
@@ -33,65 +28,14 @@ export class Layout extends React.Component {
           <title>{this.props.title}</title>
         </Head>
 
-        <Header />
+        <Header title={this.props.title} />
 
-        <main>
-          {this.props.side && (
-            <aside>
-              <SideMenu />
-            </aside>
-          )}
-          <section>{this.props.children}</section>
-        </main>
+        <article className={LayoutStyles.main_conent}>
+          {this.props.children}
+        </article>
 
         <Footer />
-
       </>
-
     );
   }
 }
-
-// import React from 'react';
-// import Head from 'next/head';
-// import Header from '#components/pc/base/Header';
-// import Footer from '#components/pc/base/Footer';
-// import LayoutClass from '#styles/pc/base/Layout.scss';
-// import SideMenu from './SideMenu';
-//
-// const Layout = ({ title, isFooter = true, side, children }) => {
-//   return (
-{/*<>*/}
-{/*<Head>*/}
-{/*<title>{title}</title>*/}
-{/*</Head>*/}
-
-{/*<Header />*/}
-
-{/*<div className={ LayoutClass.Wrap }>*/}
-{/*<main>*/}
-{/*{side && (*/}
-{/*<aside>*/}
-{/*<SideMenu />*/}
-{/*</aside>*/}
-{/*)}*/}
-{/*<section>{children}</section>*/}
-{/*</main>*/}
-{/*</div>*/}
-{/*{isFooter && <Footer />}*/}
-{/*</>*/}
-//   );
-// };
-//
-// // const side = styled.div`
-// //   width: 262px;
-// // `;
-//
-// // const content = styled.div`
-// //   width: 100%;
-// // `;
-//
-// // Layout.SideMenu = side;
-// // Layout.Contents = content;
-//
-// export default Layout;
