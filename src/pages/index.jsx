@@ -17,6 +17,17 @@ export default class extends React.Component {
   componentDidMount() {
     const userAgent = navigator.userAgent;
     const ua = uaParser.parse(userAgent);
+    console.log('userAgent',ua);
+
+    // root agent 확인
+    const html = document.getElementsByTagName('html')[0]
+    if (ua.isDesktop ) html.classList.add('pc');
+    if (ua.isMobile ) html.classList.add('mobile');
+    if (ua.isTablet ) html.classList.add('tablet');
+    if (ua.os) html.classList.add(ua.os.replace(/(\s*)/g,'').toLowerCase());
+    if (ua.platform) html.classList.add(ua.platform.toLowerCase());
+    if (ua.browser ) html.classList.add(ua.browser.toLowerCase());
+
     this.setState({ua,userAgent})
   }
 
