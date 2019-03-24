@@ -8,6 +8,15 @@
     height: 3.3rem;
     z-index: 3;
     background: limegreen;
+    .sidebar {
+      position: relative;
+      overflow: hidden;
+      //height: 100%;
+      width: 280px;
+      background: white;
+      padding: 20px;
+      font-size: 15px;
+    }
   }
   article.main_conent{
     min-height: 510px;

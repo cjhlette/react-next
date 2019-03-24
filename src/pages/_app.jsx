@@ -1,6 +1,6 @@
 import React from 'react'
 import App, { Container } from 'next/app'
-import '#styles/common/base.scss'
+import '#styles/common/Base.scss'
 import uaParser from 'useragent-parser-js'
 
 class MyApp extends App {
