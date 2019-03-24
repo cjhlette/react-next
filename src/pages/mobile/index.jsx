@@ -13,7 +13,7 @@ export class MobileIndex extends React.Component {
           <hr/>
           구글클라우드 + Nginx 웹서버 + http/2.0 + 리엑트
           <hr/>
-          주황이라........
+          주황이라..디자인 힘들겠다..
           <hr/>
           화면 개발 인터넷 막히면 큰일나요...
           <hr/>
@@ -23,7 +23,7 @@ export class MobileIndex extends React.Component {
           <div className="test1"> 페이지 style 1회성 클래스 주입</div>
           <div className={main.test2}> 페이지 import scss 클래스 주입</div>
           <div style={{ color: 'blue' }}> tag 인라인 스타일 주입</div>
-          <div>css 순서 : layout.scss -> page import scss -> 페이지 style</div>
+          <div>css 순서 : base.scss -> layout.css -> page import scss -> 페이지 style</div>
           <hr/>
 
           contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>contents<br/>
