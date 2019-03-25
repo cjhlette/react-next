@@ -1,4 +1,3 @@
-# Carrot Direct FrontEnd
 
 # 설치 및 로컬서버 시작
 
