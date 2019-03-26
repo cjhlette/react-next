@@ -2,7 +2,7 @@ import React from 'react'
 
 import uaParser from 'useragent-parser-js'
 
-import { MobileIndex } from '#pages/mobile/index'
+import MobileIndex from '#pages/mobile/index'
 import { PcIndex } from '#pages/pc/index'
 
 /**
