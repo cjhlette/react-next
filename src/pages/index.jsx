@@ -2,7 +2,7 @@ import React from 'react'
 
 import uaParser from 'useragent-parser-js'
 
-import { MobileIndex } from '#pages/mobile/index'
+import MobileIndex from '#pages/mobile/index'
 import { PcIndex } from '#pages/pc/index'
 
 /**
@@ -26,8 +26,8 @@ export default class extends React.Component {
 
     this.state.ua
       ? this.state.ua.isMobile
-        ? (layout = <MobileIndex isMobile={true} />)
-        : (layout = <PcIndex isMobile={false} />)
+      ? (layout = <MobileIndex isMobile={true} />)
+      : (layout = <PcIndex isMobile={false} />)
       : (layout = null)
 
     return layout
