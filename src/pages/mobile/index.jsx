@@ -6,6 +6,7 @@ import FullScreenDialog from '#components/mobile/test/FullScreenDialog'
 import CustomizedDialogDemo from '#components/mobile/test/CustomizedDialogDemo'
 import ControlledExpansionPanels from '#components/mobile/test/ControlledExpansionPanels'
 import MaterialUIPickers from '#components/mobile/test/MaterialUIPickers'
+import TextField from '#components/mobile/test/TextField'
 
 import MainStyles from '#styles/mobile/base/Main.scss'
 
@@ -35,118 +36,8 @@ export default function MobileIndex() {
         <hr />
         <ControlledExpansionPanels />
         <hr />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
-        contents
-        <br />
+        <TextField />
+        <hr />
       </Layout>
       {/* 페이지 style class 주입 예시 (상단 헤더에 scss 파일들 로드 아래 들어갑니다.) */}
       <style jsx global>{`
