@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Layout } from '#components/pc/base/Layout';
+import { Layout } from '#components/desktop/base/Layout';
 
-export class PcIndex extends React.Component {
+export class DesktopIndex extends React.Component {
   render() {
     return (
       <>
@@ -23,4 +23,4 @@ export class PcIndex extends React.Component {
   }
 }
 
-export default PcIndex;
+export default DesktopIndex;

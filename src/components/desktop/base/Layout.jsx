@@ -1,10 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
 
-import LayoutStyles from '#styles/pc/base/Layout.scss';
+import LayoutStyles from '#styles/desktop/base/Layout.scss';
 
-import { Header } from '#components/pc/base/Header';
-import { Footer } from '#components/pc/base/Footer';
+import { Header } from '#components/desktop/base/Header';
+import { Footer } from '#components/desktop/base/Footer';
 
 import { initGA, logPageView } from '#lib/analytics/analytics';
 

@@ -1,4 +1,4 @@
-import { Layout } from "#components/mobile/base/Layout";
+import { Layout } from "#components/desktop/base/Layout";
 
 export default () => (
   <Layout title="회사소개 !!">

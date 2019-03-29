@@ -3,7 +3,7 @@ import React from 'react'
 import uaParser from 'useragent-parser-js'
 
 import MobileIndex from '#pages/mobile/index'
-import { PcIndex } from '#pages/pc/index'
+import { DesktopIndex } from '#pages/desktop/index'
 
 /**
  * '/' 경로 userAgent 로 PC/MOBILE 분기
@@ -27,7 +27,7 @@ export default class extends React.Component {
     this.state.ua
       ? this.state.ua.isMobile
       ? (layout = <MobileIndex isMobile={true} />)
-      : (layout = <PcIndex isMobile={false} />)
+      : (layout = <DesktopIndex isMobile={false} />)
       : (layout = null)
 
     return layout
