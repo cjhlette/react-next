@@ -45,6 +45,7 @@ class Header extends React.Component {
 
   render() {
     const { classes } = this.props;
+    const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
 
     return (
       <>
@@ -67,6 +68,7 @@ class Header extends React.Component {
           onClose={this.toggleDrawer('right', false)}
           onOpen={this.toggleDrawer('right', true)}
           swipeAreaWidth={20}
+          disableBackdropTransition={!iOS} disableDiscovery={iOS}
         >
           <div
             tabIndex={0}
