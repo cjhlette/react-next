@@ -58,7 +58,7 @@ class MyApp extends App {
               tree thanks to React context. */}
           <ThemeProvider theme={this.pageContext.theme}>
             {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-            <CssBaseline />
+            {/*<CssBaseline />*/}
             {/* Pass pageContext to the _document though the renderPage enhancer
                 to render collected styles on server-side. */}
             <Component pageContext={this.pageContext} {...pageProps} />

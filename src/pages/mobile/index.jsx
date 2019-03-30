@@ -7,6 +7,9 @@ import CustomizedDialogDemo from '#components/mobile/test/CustomizedDialogDemo'
 import ControlledExpansionPanels from '#components/mobile/test/ControlledExpansionPanels'
 import MaterialUIPickers from '#components/mobile/test/MaterialUIPickers'
 import TextField from '#components/mobile/test/TextField'
+import DemoTabs from '#components/mobile/test/DemoTabs'
+import AutoSwipe from '#components/mobile/test/AutoSwipe'
+import SlideDialog from '#components/mobile/test/SlideDialog'
 
 import MainStyles from '#styles/mobile/base/Main.scss'
 
@@ -14,24 +17,20 @@ export default function MobileIndex() {
   return (
     <>
       <Layout title='HOME'>
-        <hr />
-        구글클라우드 + Nginx 웹서버 + http/2.0 + 리엑트
-        <hr />
-        주황이라..디자인 힘들겠다..
-        <hr />
-        화면 개발 인터넷 막히면 큰일나요...
-        <hr />
-        nodejs / npm 사용 가능해야 합니다. 리엑트는 gradle, maven 같이 npm 패키지 매니저 기반 개발입니다.
+        <AutoSwipe />
         <hr />
         <div className='test1'> 페이지 style 1회성 클래스 주입</div>
         <div className={MainStyles.test2}> 페이지 import scss 클래스 주입</div>
         <div style={{ color: 'blue' }}> tag 인라인 스타일 주입</div>
         <div>css 순서 : base.scss -> layout.css -> page import scss -> 페이지 style</div>
         <hr />
+        <DemoTabs />
+        <hr />
         <FullScreenDialog />
         <hr />
-        <CustomizedDialogDemo />
+        <SlideDialog />
         <hr />
+        <CustomizedDialogDemo />
         {/*<MaterialUIPickers />*/}
         <hr />
         <ControlledExpansionPanels />

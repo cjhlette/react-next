@@ -9,7 +9,7 @@
     "build": "next build src && next export src -o dist",
     "start": "node server.js",
     "start:prod": "next start src",
-    "preview": "next build src && next export src -o dist && http-server dist",
+    "preview": "NODE_ENV=production next build src && next export src -o dist && http-server dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -38,6 +38,7 @@
     "react-dom": "^16.8.5",
     "react-redux": "^6.0.1",
     "react-spring": "^8.0.18",
+    "react-swipeable-views": "^0.13.1",
     "redux": "^4.0.1",
     "redux-actions": "^2.6.5",
     "redux-devtools-extension": "^2.13.8",

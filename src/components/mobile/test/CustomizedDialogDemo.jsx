@@ -69,7 +69,7 @@ class CustomizedDialogDemo extends React.Component {
     return (
       <div>
         <Button variant="outlined" color="secondary" onClick={this.handleClickOpen}>
-          Open dialog
+          모달 DIALOG
         </Button>
         <Dialog
           onClose={this.handleClose}

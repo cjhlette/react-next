@@ -45,7 +45,7 @@ class FullScreenDialog extends React.Component {
     return (
       <div>
         <Button variant="outlined" color="primary" onClick={this.handleClickOpen}>
-          Open full-screen dialog
+          팝업!
         </Button>
         <Dialog
           fullScreen

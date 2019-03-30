@@ -24,6 +24,9 @@ const styles = {
     marginLeft: -12,
     marginRight: 20,
   },
+  drawer: {
+    width: 300,
+  }
 };
 
 class Header extends React.Component {
@@ -63,14 +66,16 @@ class Header extends React.Component {
           open={this.state.right}
           onClose={this.toggleDrawer('right', false)}
           onOpen={this.toggleDrawer('right', true)}
+          swipeAreaWidth={20}
         >
           <div
             tabIndex={0}
             role="button"
             onClick={this.toggleDrawer('right', false)}
             onKeyDown={this.toggleDrawer('right', false)}
+            className={classes.drawer}
           >
-            <div className={classes.list}>
+            <div>
               <List>
                 <Link href='/'>
                   <ListItem>
@@ -112,6 +117,9 @@ class Header extends React.Component {
           header button {
             font-size:30px;
             margin:5px;
+          }
+          .drawerDiv {
+            width:80%
           }
         `}</style>
       </>
