@@ -8,4 +8,4 @@
 dist
 
 # yarn
-yarn.lock
+yarn*
