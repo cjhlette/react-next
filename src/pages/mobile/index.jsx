@@ -5,7 +5,6 @@ import { Layout } from '#components/mobile/base/Layout'
 import FullScreenDialog from '#components/mobile/test/FullScreenDialog'
 import CustomizedDialogDemo from '#components/mobile/test/CustomizedDialogDemo'
 import ControlledExpansionPanels from '#components/mobile/test/ControlledExpansionPanels'
-import MaterialUIPickers from '#components/mobile/test/MaterialUIPickers'
 import TextField from '#components/mobile/test/TextField'
 import DemoTabs from '#components/mobile/test/DemoTabs'
 import AutoSwipe from '#components/mobile/test/AutoSwipe'
@@ -31,7 +30,6 @@ export default function MobileIndex() {
         <SlideDialog />
         <hr />
         <CustomizedDialogDemo />
-        {/*<MaterialUIPickers />*/}
         <hr />
         <ControlledExpansionPanels />
         <hr />
