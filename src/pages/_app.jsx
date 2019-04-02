@@ -4,6 +4,8 @@ import Head from 'next/head'
 import { StylesProvider, ThemeProvider } from '@material-ui/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import getPageContext from '../getPageContext'
+import { initializeStore } from '../stores/store'
+import { Provider } from 'mobx-react'
 
 import '#styles/common/Base.scss'
 import uaParser from 'useragent-parser-js'
@@ -13,8 +15,26 @@ class MyApp extends App {
     ua: null,
   }
 
-  constructor() {
-    super()
+  static async getInitialProps(appContext) {
+    // Get or Create the store with `undefined` as initialState
+    // This allows you to set a custom default initialState
+    const mobxStore = initializeStore()
+    // Provide the store to getInitialProps of pages
+    appContext.ctx.mobxStore = mobxStore
+
+    let appProps = await App.getInitialProps(appContext)
+
+    return {
+      ...appProps,
+      initialMobxState: mobxStore,
+    }
+  }
+
+  constructor(props) {
+    super(props)
+    const isServer = !process.browser
+    this.mobxStore = isServer ? props.initialMobxState : initializeStore(props.initialMobxState)
+
     this.pageContext = getPageContext()
   }
 
@@ -61,7 +81,9 @@ class MyApp extends App {
             {/*<CssBaseline />*/}
             {/* Pass pageContext to the _document though the renderPage enhancer
                 to render collected styles on server-side. */}
-            <Component pageContext={this.pageContext} {...pageProps} />
+            <Provider store={this.mobxStore}>
+              <Component pageContext={this.pageContext} {...pageProps} />
+            </Provider>
           </ThemeProvider>
         </StylesProvider>
       </Container>

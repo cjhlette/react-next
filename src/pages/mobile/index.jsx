@@ -9,6 +9,8 @@ import TextField from '#components/mobile/test/TextField'
 import DemoTabs from '#components/mobile/test/DemoTabs'
 import AutoSwipe from '#components/mobile/test/AutoSwipe'
 import SlideDialog from '#components/mobile/test/SlideDialog'
+import ClockMobx from '#components/mobile/test/ClockMobx'
+import Counter from '#components/mobile/test/Counter'
 
 import MainStyles from '#styles/mobile/base/Main.scss'
 
@@ -16,7 +18,11 @@ export default function MobileIndex() {
   return (
     <>
       <Layout title='HOME'>
+        <ClockMobx title='Index Page' linkTo='/other' />
+        <hr />
         <AutoSwipe />
+        <hr />
+        <Counter />
         <hr />
         <div className='test1'> 페이지 style 1회성 클래스 주입</div>
         <div className={MainStyles.test2}> 페이지 import scss 클래스 주입</div>
