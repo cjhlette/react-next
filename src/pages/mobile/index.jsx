@@ -11,6 +11,7 @@ import AutoSwipe from '#components/mobile/test/AutoSwipe'
 import SlideDialog from '#components/mobile/test/SlideDialog'
 import ClockMobx from '#components/mobile/test/ClockMobx'
 import Counter from '#components/mobile/test/Counter'
+import FileUploadTest from '#components/mobile/test/FileUploadTest'
 
 import MainStyles from '#styles/mobile/base/Main.scss'
 
@@ -38,6 +39,8 @@ export default function MobileIndex() {
         <CustomizedDialogDemo />
         <hr />
         <ControlledExpansionPanels />
+        <hr />
+        <FileUploadTest />
         <hr />
         <TextField />
         <hr />
