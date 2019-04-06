@@ -1,7 +1,15 @@
-import { Layout } from "#components/mobile/base/Layout";
+import React from 'react'
 
 export default () => (
-  <div>
-    step2
-  </div>
-);
+  <>
+    <div className='test2'>step2!!!</div>
+    <style jsx global>{`
+      .test2 {
+        color: #ffffff;
+        background-color: green;
+        font-size: 50pt;
+        text-align: center;
+      }
+    `}</style>
+  </>
+)

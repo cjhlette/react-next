@@ -2,11 +2,11 @@ import React from 'react'
 
 export default () => (
   <>
-    <div className='test3'>step3!!!</div>
+    <div className='test4'>step4!!!</div>
     <style jsx global>{`
-      .test3 {
-        color: #ffffff;
-        background-color: blue;
+      .test4 {
+        color: #000000;
+        background-color: yellow;
         font-size: 50pt;
         text-align: center;
       }
