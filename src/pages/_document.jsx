@@ -14,7 +14,8 @@ class MyDocument extends Document {
       <Html lang='ko'>
         <Head>
           <meta charSet='utf-8' />
-          <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no' />
+          {/*<meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no' />*/}
+          <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
           <link rel='shortcut icon' href='/static/favicon.ico' type='image/x-icon' />
           <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet' />
           <style>{`body { margin: 0 } /* custom! */`}</style>
