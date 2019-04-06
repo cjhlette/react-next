@@ -23,7 +23,7 @@ class CarMain extends React.Component {
 
   componentDidMount() {
     // const { router } = this.props;
-    console.log(this.state.currentStep)
+    // console.log(this.state.currentStep)
   }
 
   next() {
@@ -50,7 +50,6 @@ class CarMain extends React.Component {
         <link
           rel='stylesheet'
           type='text/css'
-          charset='UTF-8'
           href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'
         />
         <link
