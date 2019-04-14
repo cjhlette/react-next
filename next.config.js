@@ -20,6 +20,17 @@ module.exports = withSass({
     config.resolve.alias['#components'] = path.join(__dirname, 'src/components')
     config.resolve.alias['#lib'] = path.join(__dirname, 'src/lib')
 
+    // image minify
+    config.module.rules.push({
+      test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+      use: {
+        loader: 'url-loader',
+        options: {
+          limit: 100000,
+        },
+      },
+    })
+
     return config
   },
   cssModules: true,
