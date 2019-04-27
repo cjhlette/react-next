@@ -18,9 +18,9 @@ class FileUploadTest extends React.Component {
   render() {
     return (
       <>
-        <input type='file' accept="image/*" multiple='multiple' onChange={this.fileuploadHandler} /><br/><br/>
-        <input type='file' accept="image/*" capture="camera" onChange={this.fileuploadHandler} />
-        <br/><br/>
+        기본:<input type='file' onChange={this.fileuploadHandler} /><br/><br/>
+        사진첩:<input type='file' accept="image/*" capture="gallery" multiple='multiple' onChange={this.fileuploadHandler} /><br/><br/>
+        카메라:<input type='file' accept="image/*" capture="camera" onChange={this.fileuploadHandler} /><br/><br/>
         <img id="blah" src="#" alt="your image" />
         {/*<button onClick={this.fileuploadHandler}>Upload</button>*/}
       </>
